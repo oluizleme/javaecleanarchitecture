@@ -51,7 +51,7 @@ class AlunoTest {
 		var aluno = new Aluno(cpf,nome,email);
 
 		assertThat(aluno).hasFieldOrPropertyWithValue("nome", nome);
-		assertThat(aluno).hasFieldOrPropertyWithValue("cpf", cpf);
-		assertThat(aluno).hasFieldOrPropertyWithValue("email", email);
+		assertThat(aluno).hasFieldOrPropertyWithValue("cpf", numeroDoCpf);
+		assertThat(aluno).hasFieldOrPropertyWithValue("email", endereco);
 	}
 }
